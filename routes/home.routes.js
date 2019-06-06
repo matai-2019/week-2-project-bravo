@@ -11,7 +11,7 @@ router.get('/welcome', (req, res) => {
   res.send('Welcome')
 })
 
-router.get('welcome/:username', (req, res) => {
+router.get('/welcome/:username', (req, res) => {
   //render
 
   res.send(`status is ${res.status}`)

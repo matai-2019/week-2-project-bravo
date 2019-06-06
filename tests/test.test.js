@@ -20,7 +20,7 @@ test('test root redirects to /welcome', (done) => {
 
 test('test username route returns 200', (done) => {
   request(server)
-    .get('welcome/:username')
+    .get('/welcome/:username')
     .end(function (err, res) {
       if (err) throw err
 
@@ -32,7 +32,7 @@ test('test username route returns 200', (done) => {
 
 test('test username matches route params', (done) => {
   request(server)
-    .get('welcome/:username')
+    .get('/welcome/:username')
     .end(function (err, res) {
       const $ = cheerio.load(res.text)
       const expected = $('h1').text
