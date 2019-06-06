@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "debug": "nodemon --inspect index --ignore ./data/*",
+    "test": "jest --watchAll --verbose --noStackTrace",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
