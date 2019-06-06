@@ -27,6 +27,7 @@ function uploadImage (name, binary, path, done) {
 
 module.exports = {
   writeFile,
+  readFile,
   dirname: __dirname,
   uploadImage
 }
