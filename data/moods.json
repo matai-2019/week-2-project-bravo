@@ -1,0 +1,44 @@
+{
+    "moods": [
+        {"id" : 1,
+        "name": "Kanye Relaxed",
+        "image": "/public/images/kanye1.jpg"
+    },
+        {"id" : 2,
+        "name": "Kanye Happy",
+        "image": "/public/images/kanye2.jpg"
+    },
+        {"id" : 3,
+        "name": "Kanye Cool",
+        "image": "/public/images/kanye3.jpg"
+    },
+        {"id" : 4,
+        "name": "Kanye Kanye",
+        "image": "/public/images/kanye4.jpg"
+    },
+        {"id" : 5,
+        "name": "Kanye Neutral",
+        "image": "/public/images/kanye5.jpg"
+    },
+        {"id" : 6,
+        "name": "Kanye Peeved",
+        "image": "/public/images/kanye6.jpg"
+    },
+        {"id" : 7,
+        "name": "Kanye Anyoed",
+        "image": "/public/images/kanye7.jpg"
+    },
+        {"id" : 8,
+        "name": "Kanye Angry",
+        "image": "/public/images/kanye8.jpg"
+    },
+        {"id" : 9,
+        "name": "Kanye Rage",
+        "image": "/public/images/kanye9.jpg"
+    },
+        {"id" : 10,
+        "name": "Kanye Bezerk",
+        "image": "/public/images/kanye10.jpg"
+    }
+    ]
+}
