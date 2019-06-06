@@ -1,0 +1,44 @@
+{
+    "users":[
+        {
+            "id": 1,
+            "firstName": "Joseph",
+            "lastName": "Tohiki",
+            "email": "email@email.com",
+            "password": "password",
+            "mood": 0
+        },
+        {
+            "id": 2,
+            "firstName": "Name",
+            "lastName": "Tohiki",
+            "email": "fake@fake.com",
+            "password": "password",
+            "mood": 0
+        },
+        {
+            "id": 3,
+            "firstName": "Bradley",
+            "lastName": "Cooper",
+            "email": "copper@cooper.com",
+            "password": "limitless",
+            "mood": 0
+        },
+        {
+            "id": 4,
+            "firstName": "Mini",
+            "lastName": "Cooper",
+            "email": "mini@cooper.com",
+            "password": "sakatumatia",
+            "mood": 0
+        },
+        {
+            "id": 5,
+            "firstName": "Rip",
+            "lastName": "This",
+            "email": "whole@project.com",
+            "password": "forshadowing",
+            "mood": 0
+        }
+    ]
+}
