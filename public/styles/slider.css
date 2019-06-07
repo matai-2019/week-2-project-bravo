@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+.slide-wrap .slider{
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 50px;
+}
+
+.slide-button{
+  position: absolute;
+  top: 20px;
+  left: 300px;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.container {
+  position: relative;
+  width: 750px;
+  height: 100%;
+  left: 500px;
+}
+
+.slider {
+  height: 500px;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  color: aqua;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  height: 100%;
+  background-color: black;
+  scroll-behavior: smooth;
+  font-size: 100px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.slide-wrap .slider span  { 
+  position: absolute; 
+  top: 40%;
+  left: 45%;
+}
+
+.slider > div {
+  scroll-snap-align: start;
+}
+
+.slider > a {
+  display: none;
+}
