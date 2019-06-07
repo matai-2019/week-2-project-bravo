@@ -19,6 +19,7 @@ function readFile (path, type, done){
 // Write Binary files like images
 // @Params String name, String binary, String path, Function done
 function uploadImage (name, binary, path, done) {
+    const fullPath = path + '/' + name
   fs.writeFile(fullPath, binary, (err) => {
     if (err) done(err)
     done()
