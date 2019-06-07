@@ -22,3 +22,8 @@ header p{
 h1, h2, h3, h4, h6, p {
   color: var(--kanye-grey);
 }
+
+h1.advice{
+  text-align: center;
+  color: var(--kanye-pink)
+}

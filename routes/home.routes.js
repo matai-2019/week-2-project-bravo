@@ -33,8 +33,11 @@ router.post('/welcome/:username/', (req, res) => {
 router.get('/welcome/:username/:stressLevel', (req, res) => {
   const level = req.params.stressLevel
 
+  // data.find(kanye => kanye.id === Number(level)) ???
+  // its not a number so we cant use ===
+  // need to fix *
   const kanye = data.find(kanye => kanye.id == level)
-  res.send(`<h1>${kanye.advice}</h1>`)
+  res.render('advice.hbs', { advice: kanye.advice })
 })
 
 module.exports = router
