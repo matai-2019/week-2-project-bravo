@@ -1,0 +1,8 @@
+:root {
+  --main-bg: #CADFDF
+}
+
+body {
+  background-color: var(--main-bg);
+
+}
