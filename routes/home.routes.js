@@ -22,4 +22,8 @@ router.get('/welcome/:username', (req, res) => {
   res.send(`<h1>hello ${name}</h1>`)
 })
 
+router.post('/welcome/:username/', (req, res) => {
+  res.redirect(`welcome/${req.params.username}/${req.body.stressLevel}`)
+})
+
 module.exports = router

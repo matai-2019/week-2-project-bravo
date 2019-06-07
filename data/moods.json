@@ -2,43 +2,54 @@
     "moods": [
         {"id" : 1,
         "name": "Kanye Relaxed",
-        "image": "/public/images/kanye1.jpg"
+        "image": "/public/images/kanye1.jpg",
+        "advice": "Live yo best life!"
     },
         {"id" : 2,
         "name": "Kanye Happy",
-        "image": "/public/images/kanye2.jpg"
+        "image": "/public/images/kanye2.jpg",
+        "advice": "Laugh"
     },
         {"id" : 3,
         "name": "Kanye Cool",
-        "image": "/public/images/kanye3.jpg"
+        "image": "/public/images/kanye3.jpg",
+        "advice": "Learn to avoid procrastination"
+
     },
         {"id" : 4,
         "name": "Kanye Kanye",
-        "image": "/public/images/kanye4.jpg"
+        "image": "/public/images/kanye4.jpg",
+        "advice": "Listen to soothing music"
     },
         {"id" : 5,
         "name": "Kanye Neutral",
-        "image": "/public/images/kanye5.jpg"
+        "image": "/public/images/kanye5.jpg",
+        "advice": "Play a game"
     },
         {"id" : 6,
         "name": "Kanye Peeved",
-        "image": "/public/images/kanye6.jpg"
+        "image": "/public/images/kanye6.jpg",
+        "advice": "Practise mindfulness"
     },
         {"id" : 7,
-        "name": "Kanye Anyoed",
-        "image": "/public/images/kanye7.jpg"
+        "name": "Kanye Annoyed",
+        "image": "/public/images/kanye7.jpg",
+        "advice": "Learn to say no"
     },
         {"id" : 8,
         "name": "Kanye Angry",
-        "image": "/public/images/kanye8.jpg"
+        "image": "/public/images/kanye8.jpg",
+        "advice": "Write your stress down!"
     },
         {"id" : 9,
         "name": "Kanye Rage",
-        "image": "/public/images/kanye9.jpg"
+        "image": "/public/images/kanye9.jpg",
+        "advice": "Exercise, spend time with friends and family"
     },
         {"id" : 10,
         "name": "Kanye Bezerk",
-        "image": "/public/images/kanye10.jpg"
+        "image": "/public/images/kanye10.jpg",
+        "advice": "BE KIND TO YO' SELF. TREAT YO' SELF"
     }
-    ]
+ ]
 }
