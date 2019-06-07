@@ -1,7 +1,7 @@
 // External Imports
 const router = require('express').Router()
 const viewData = {
-  title: 'Kanye Stress Test'
+  title: 'KANYE STRESS TEST'
 }
 
 router.get('/', (req, res) => {
