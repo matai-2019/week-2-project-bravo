@@ -19,7 +19,7 @@ router.post('/welcome', (req, res) => {
 router.get('/welcome/:username', (req, res) => {
   const name = req.params.username
   // res.render('slider.html')
-  res.send('hello ' + name)
+  res.send(`<h1>hello ${name}</h1>`)
 })
 
 module.exports = router
