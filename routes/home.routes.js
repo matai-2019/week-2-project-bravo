@@ -6,15 +6,13 @@ router.get('/', (req, res) => {
 })
 
 router.get('/welcome', (req, res) => {
-  //Render
-  
-  res.send('Welcome')
+  res.render('welcome.hbs')
 })
 
 router.get('/welcome/:username', (req, res) => {
-  //render
 
-  res.send(`status is ${res.status}`)
+  // res.render('slider.html')
+  res.send('working')
 })
 
 module.exports = router
