@@ -30,15 +30,15 @@ test('test username route returns 200', (done) => {
     })
 })
 
-// test('test username matches route params', (done) => {
-//   request(server)
-//     .get('/welcome/tam')
-//     .end(function (err, res) {
-//       console.log(res.params)
-//       const $ = cheerio.load(res.text)
-//       const actual = $('h1').text
-//       if (err) throw err
-//       // expect(actual).toMatch(res)
-//       done()
-//     })
-// })
+test('test username matches route params', (done) => {
+  request(server)
+    .get('/welcome/tam')
+    .end(function (err, res) {
+      const $ = cheerio.load(res.text)
+      const actual = $('h1').text()
+      const expected = 'hello tam'
+      if (err) throw err
+      expect(actual).toBe(expected)
+      done()
+    })
+})
