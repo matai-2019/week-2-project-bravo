@@ -12,8 +12,11 @@ router.get('/welcome', (req, res) => {
   res.render('welcome', viewData)
 })
 
-router.get('/welcome/:username', (req, res) => {
+router.post('/welcome', (req, res) => {
+  res.redirect(`/welcome/${req.body.name}`)
+})
 
+router.get('/welcome/:username', (req, res) => {
   // res.render('slider.html')
   res.send('working')
 })
