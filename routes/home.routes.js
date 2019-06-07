@@ -1,5 +1,8 @@
 // External Imports
 const router = require('express').Router()
+const viewData = {
+  title: 'Kanye Stress Test'
+}
 
 router.get('/', (req, res) => {
   res.redirect('/welcome')
