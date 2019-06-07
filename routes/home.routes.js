@@ -17,8 +17,9 @@ router.post('/welcome', (req, res) => {
 })
 
 router.get('/welcome/:username', (req, res) => {
+  const name = req.params.username
   // res.render('slider.html')
-  res.send('working')
+  res.send('hello ' + name)
 })
 
 module.exports = router
