@@ -42,3 +42,16 @@ test('test username matches route params', (done) => {
       done()
     })
 })
+
+test('test if mood level returns right advice', (done) => {
+  request(server)
+    .get('/welcome/tam/1')
+    .end(function (err, res) {
+      const $ = cheerio.load(res.text)
+      const actual = $('h1').text()
+      const expected = 'Live yo best life!'
+      if (err) throw err
+      expect(actual).toBe(expected)
+      done()
+    })
+})

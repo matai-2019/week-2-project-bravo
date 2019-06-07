@@ -1,5 +1,6 @@
 // External Imports
 const router = require('express').Router()
+const data = require('../data/moods.json')
 const viewData = {
   title: 'Kanye Stress Test'
 }
@@ -25,5 +26,11 @@ router.get('/welcome/:username', (req, res) => {
 router.post('/welcome/:username/', (req, res) => {
   res.redirect(`welcome/${req.params.username}/${req.body.stressLevel}`)
 })
+
+router.get('/welcome/:username/:stressLevel', (req, res) => {
+  const level = req.params.stressLevel
+  res.send(`<h1>hello ${level}</h1>`)
+})
+
 
 module.exports = router
