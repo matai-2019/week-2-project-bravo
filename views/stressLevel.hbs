@@ -57,11 +57,11 @@
     const name = document.querySelector('input[name="userName"]').value
     let form = document.querySelector('form[method="POST"]')
 
-    function changeInput(event) {
-      const value = event.target.textContent
-
-      // Set Attributes
-      stressLevel.setAttribute('value', value)
-      form.setAttribute('action', `/welcome/${name}/${value}`)
-    }
-  </script>
+  function changeInput(event) {
+    const value = event.target.textContent
+    
+    // Set Attributes
+    stressLevel.setAttribute('value', value)
+    form.setAttribute('action', `/welcome/${name}`)
+  }
+</script>
