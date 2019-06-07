@@ -55,3 +55,4 @@ test('test if mood level returns right advice', (done) => {
       done()
     })
 })
+

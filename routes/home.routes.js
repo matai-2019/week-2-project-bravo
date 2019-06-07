@@ -1,6 +1,6 @@
 // External Imports
 const router = require('express').Router()
-const data = require('../data/moods.json')
+const data = require('../data/moods.json').moods
 const viewData = {
   title: 'Kanye Stress Test'
 }
@@ -32,8 +32,9 @@ router.post('/welcome/:username/', (req, res) => {
 
 router.get('/welcome/:username/:stressLevel', (req, res) => {
   const level = req.params.stressLevel
-  console.log('suggestions page ' + level)
-  res.send(`<h1>${level}</h1>`)
+
+  const kanye = data.find(kanye => kanye.id == level)
+  res.send(`<h1>${kanye.advice}</h1>`)
 })
 
 module.exports = router
