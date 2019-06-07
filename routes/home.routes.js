@@ -6,9 +6,12 @@ router.get('/', (req, res) => {
 })
 
 router.get('/welcome', (req, res) => {
-  //Render
-  
-  res.send('Welcome')
+  res.render('welcome.hbs')
+})
+
+router.post('/welcome', (req, res) => {
+
+  res.redirect(`/welcome/${req.body.name}`)
 })
 
 router.get('/welcome/:username', (req, res) => {
