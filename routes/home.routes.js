@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/welcome', (req, res) => {
-  res.render('welcome.hbs')
+  res.render('welcome', viewData)
 })
 
 router.get('/welcome/:username', (req, res) => {
