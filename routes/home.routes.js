@@ -19,18 +19,21 @@ router.post('/welcome', (req, res) => {
 
 router.get('/welcome/:username', (req, res) => {
   const name = req.params.username
-  // res.render('slider.html')
-  res.send(`<h1>hello ${name}</h1>`)
+  res.render('stressLevel', { name: name })
+  // res.send(`<h1>hello ${name}</h1>`)
 })
 
 router.post('/welcome/:username/', (req, res) => {
-  res.redirect(`welcome/${req.params.username}/${req.body.stressLevel}`)
+  const name = req.params.username
+  const level = req.body.stressLevel
+  console.log('posted ', name, level)
+  res.redirect(`${name}/${level}`)
 })
 
 router.get('/welcome/:username/:stressLevel', (req, res) => {
   const level = req.params.stressLevel
-  res.send(`<h1>hello ${level}</h1>`)
+  console.log('suggestions page ' + level)
+  res.send(`<h1>${level}</h1>`)
 })
-
 
 module.exports = router
