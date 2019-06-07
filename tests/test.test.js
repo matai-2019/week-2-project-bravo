@@ -32,12 +32,13 @@ test('test username route returns 200', (done) => {
 
 test('test username matches route params', (done) => {
   request(server)
-    .get('/welcome/:username')
+    .get('/welcome/tam')
     .end(function (err, res) {
       const $ = cheerio.load(res.text)
-      const expected = $('h1').text
+      const actual = $('h1').text()
+      const expected = 'hello tam'
       if (err) throw err
-      expect(expected).toMatch(res.params.username)
+      expect(actual).toBe(expected)
       done()
     })
 })
