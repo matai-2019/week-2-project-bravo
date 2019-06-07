@@ -2,7 +2,7 @@
 const router = require('express').Router()
 const data = require('../data/moods.json').moods
 const viewData = {
-  title: 'Kanye Stress Test'
+  title: 'KANYE STRESS TEST'
 }
 
 router.get('/', (req, res) => {

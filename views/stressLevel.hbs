@@ -3,48 +3,59 @@
   <div class="slide-wrap">
     <!-- slide-button that goes to each of the slide -->
     <div class="slide-button">
-      <a onclick='changeInput(event)' href="#slide-1">1</a>
-      <a onclick='changeInput(event)' href="#slide-2">2</a>
-      <a onclick='changeInput(event)' href="#slide-3">3</a>
-      <a onclick='changeInput(event)' href="#slide-4">4</a>
-      <a onclick='changeInput(event)' href="#slide-5">5</a>
-      <a onclick='changeInput(event)' href="#slide-6">6</a>
-      <a onclick='changeInput(event)' href="#slide-7">7</a>
-      <a onclick='changeInput(event)' href="#slide-8">8</a>
-      <a onclick='changeInput(event)' href="#slide-9">9</a>
-      <a onclick='changeInput(event)' href="#slide-10">10</a>
+      <a href="#slide-1" onclick="changeInput(event)">1</a>
+      <a href="#slide-2" onclick="changeInput(event)">2</a>
+      <a href="#slide-3" onclick="changeInput(event)">3</a>
+      <a href="#slide-4" onclick="changeInput(event)">4</a>
+      <a href="#slide-5" onclick="changeInput(event)">5</a>
+      <a href="#slide-6" onclick="changeInput(event)">6</a>
+      <a href="#slide-7" onclick="changeInput(event)">7</a>
+      <a href="#slide-8" onclick="changeInput(event)">8</a>
+      <a href="#slide-9" onclick="changeInput(event)">9</a>
+      <a href="#slide-10" onclick="changeInput(event)">10</a>
     </div>
     <!-- slides that goes inside the slide-wrap -->
     <div class="slider">
-      <div class="slide" id="slide-1"><span>1</span></div>
-      <div class="slide" id="slide-2"><span>2</span></div>
-      <div class="slide" id="slide-3"><span>3</span></div>
-      <div class="slide" id="slide-4"><span>4</span></div>
-      <div class="slide" id="slide-5"><span>5</span></div>
-      <div class="slide" id="slide-6"><span>6</span></div>
-      <div class="slide" id="slide-7"><span>7</span></div>
-      <div class="slide" id="slide-8"><span>8</span></div>
-      <div class="slide" id="slide-9"><span>9</span></div>
-      <div class="slide" id="slide-10"><span>10</span></div>
+      <div class="slide" id="slide-1"><span><img src="/images/Kanye1-img.jpg" alt=""
+            height="160px" width="140px"></span></div>
+      <div class="slide" id="slide-2"><span><img src="/images/Kanye2-img.jpg" alt=""
+            height="160px" width="140px"></span></div>
+      <div class="slide" id="slide-3"><span><img src="/images/Kanye3-img.jpg" alt=""
+            height="160px" width="140px"></span></div>
+      <div class="slide" id="slide-4"><span><img src="/images/Kanye4-img.jpg" alt=""
+            height="160px" width="140px"></span></div>
+      <div class="slide" id="slide-5"><span><img src="/images/Kanye5-img.jpg" alt=""
+            height="160px" width="140px"></span></div>
+      <div class="slide" id="slide-6"><span><img src="/images/Kanye6-img.jpg" alt=""
+            height="160px" width="140px"></span></div>
+      <div class="slide" id="slide-7"><span><img src="/images/Kanye7-img.jpg" alt=""
+            height="160px" width="140px"></span></div>
+      <div class="slide" id="slide-8"><span><img src="/images/Kanye8-img.jpg" alt=""
+            height="160px" width="140px"></span></div>
+      <div class="slide" id="slide-9"><span><img src="/images/Kanye9-img.jpg" alt=""
+            height="160px" width="140px"></span></div>
+      <div class="slide" id="slide-10"><span><img src="/images/Kanye10-img.jpg" alt=""
+            height="160px" width="140px"></span></div>
     </div>
   </div>
-</div>
+  </div>
 
-<form method="POST" action="">
+
+  <form method="POST" action="">
     <h3>Submit your stress level</h3>
     <input name="userName" type="text" hidden value="{{name}}">
     <input name="stressLevel" type="text" hidden value='0'>
     <button class="btn btn-primary" type="submit" value="submit">
-        Submit
+      Submit
     </button>
-</form>
+  </form>
 
 
 
-<script>
-  let stressLevel = document.querySelector('input[name="stressLevel"]')
-  const name = document.querySelector('input[name="userName"]').value
-  let form = document.querySelector('form[method="POST"]')
+  <script>
+    let stressLevel = document.querySelector('input[name="stressLevel"]')
+    const name = document.querySelector('input[name="userName"]').value
+    let form = document.querySelector('form[method="POST"]')
 
   function changeInput(event) {
     const value = event.target.textContent

@@ -7,7 +7,9 @@
     What should we call you?
   </p>
   <form action="/welcome" method="POST">
-    <label for="name">Name</label><input type="text" name="name" id="welcome-name" placeholder="Kanye">
-    <button>Submit</button>
+    <div class="form-group">
+    <input type="text" name="name" class="form-control" id="welcome-name" placeholder="Name: Kanye">
+    </div>
+    <button class="btn btn-light">Submit</button>
   </form>
 </div>
