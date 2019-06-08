@@ -1,0 +1,29 @@
+:root {
+  --main-bg: #CADFDF;
+  --kanye-grey: #666666;
+  --kanye-pink: #FFBAB2;
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+header {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-top: 40px;
+  border-bottom: solid 1px var(--kanye-pink)
+}
+
+header p{
+  font-size: 4em;
+}
+
+h1, h2, h3, h4, h6, p {
+  color: var(--kanye-grey);
+}
+
+h1.advice{
+  text-align: center;
+  color: var(--kanye-pink)
+}

@@ -4,7 +4,7 @@ const hbs = require('express-handlebars')
 const server = express()
 
 // Internal Imports
-const homeRoutes = require('./routes/home.routes.js').router
+const homeRoutes = require('./routes/home.routes.js')
 
 // Middleware
 server.engine('hbs', hbs({
@@ -13,7 +13,7 @@ server.engine('hbs', hbs({
 }))
 server.set('view engine', 'hbs')
 server.use(express.static('public'))
-server.use(express.urlencoded({extended: false}))
+server.use(express.urlencoded({ extended: false }))
 
 // Router Middlewares
 server.use('/', homeRoutes)

@@ -1,0 +1,15 @@
+<div class="welcome">
+  {{>header}}
+  <h1>
+    Welcome.
+  </h1>
+  <p>
+    What should we call you?
+  </p>
+  <form action="/welcome" method="POST">
+    <div class="form-group">
+    <input type="text" name="name" class="form-control" id="welcome-name" placeholder="Name: Kanye">
+    </div>
+    <button class="btn btn-light">Submit</button>
+  </form>
+</div>
